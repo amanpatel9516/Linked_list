@@ -1,0 +1,30 @@
+/* Linked List Node structure:
+
+struct Node
+{
+    int data;
+    struct Node *next;
+}
+
+*/
+
+class Solution {
+  public:
+    Node* reverseList(struct Node* head) {
+        // code here
+      
+    
+    Node* preptr = nullptr;
+    Node* ptr = head;
+    Node* next  = nullptr;
+    
+    while (ptr != nullptr) {
+        next = ptr->next;
+        ptr->next = preptr ;
+        preptr = ptr;
+        ptr = next;
+    }
+    return preptr;
+
+    }
+};
