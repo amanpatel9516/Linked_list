@@ -7,3 +7,8 @@ Define the Node class/struct.
 Implement insertAtHead.
 
 Implement printList (Traversal).
+Day 2: Insertion Operations
+
+Implement insertAtTail.
+
+Implement insertAtPosition (generic insertion).
